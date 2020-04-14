@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<html lang=en>
+<head>
+<meta charset="utf-8">
+<title>Project1</title>
+<meta name="generator" content="NSB/AppStudio 8.0.6.0$rgkw" />
+<meta name='date' content='2020-04-14 15:07:10.293291' />
+<meta name='Description' content='Project1' />
+<meta name='version' content='1.0.0' />
+<meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no viewport-fit=cover' />
+<meta name='theme-color' content='#000000' />
+<meta name='mobile-web-app-capable' content='yes' />
+<meta name='apple-mobile-web-app-status-bar-style' content='black-translucent' />
+<meta name='apple-mobile-web-app-title' content='' />
+<meta name='copyright' content='copyright 2020 ABC Company' />
+<link rel='apple-touch-icon' href='nsb/images/512.png' />
+<link rel='shortcut icon' href='nsb/images/512.png' />
+<link href='manifest.json' rel='manifest' />
+<link href="toolbox/as/dist/asStyle.css" rel="stylesheet">
+<script src="nsb/library/jquery3.js"></script>
+<link href="nsb/library/jquery.modal.min.css" rel="stylesheet">
+<script src="nsb/library/jquery.modal.min.js"></script>
+<script src="nsb/library/appstudioFunctions.js"></script>
+<link href="toolbox/bs4/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="toolbox/bs4/dist/open-iconic/css/open-iconic-bootstrap.min.css" rel="stylesheet">
+<script src="toolbox/bs4/dist/js/bootstrap.bundle.min.js"></script>
+<script src="toolbox/bs4/dist/bsFunctions.min.js"></script>
+
+<style type="text/css">
+
+#Overview {background:inherit;}
+#btnGoogleRest {position:absolute; left:32px; top:48px; height:104px; width:120px;}
+#btnBlankAPI {position:absolute; left:40px; top:184px; width:112px;}
+#btnActivity1 {position:absolute; left:208px; top:48px;}
+#btnActivity2 {position:absolute; left:208px; top:128px;}
+#btnActivity3 {position:absolute; left:208px; top:208px;}
+#btnActivity4 {position:absolute; left:208px; top:288px;}
+#GoogleRestaurants {background:inherit;}
+#btnSeeRestaurants {position:absolute; left:24px; top:56px;}
+#txtaCloseRest {position:absolute; left:16px; top:128px; height:256px; width:288px;}
+#BlankTemplateAPICode {background:inherit;}
+
+#Activity1 {background:inherit;}
+
+#Activity2 {background:inherit;}
+
+#Activity3 {background:inherit;}
+
+</style>
+
+</head>
+<body style="margin:0px;-ms-touch-action:none;font-family:-apple-system, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue';">
+<noscript><h1>JavaScript must be enabled!</h1></noscript>
+<div data-role="page" id="NSBPage" data-theme="a" style="position:absolute; width:100%; height:100%; background-color:inherit; ">
+<a name='/Overview' data-role=none></a>
+<div id="Overview"  class="nsb-form " style="display:none;  position:absolute;  height: 100vh; top:0px; left:0px; width:100%; ">
+<script>
+Overview.innerHTML=["",
+    "<button id='btnGoogleRest' data-role='none' class='btn btn-secondary btn-md ' style='font-family:inherit;' data-i18n='Google Restaurants Demo'><span id='btnGoogleRest_icon' class=''></span>Google Restaurants Demo<span id=btnGoogleRest_badge class=\"badge badge-info\" style=\"margin-left:1ch;\"></span></button>",
+
+    "<button id='btnBlankAPI' data-role='none' class='btn btn-secondary btn-md ' style='font-family:inherit;' data-i18n='Blank Teamplate API Code'><span id='btnBlankAPI_icon' class=''></span>Blank Teamplate API Code<span id=btnBlankAPI_badge class=\"badge badge-info\" style=\"margin-left:1ch;\"></span></button>",
+
+    "<button id='btnActivity1' data-role='none' class='btn btn-secondary btn-md ' style='font-family:inherit;' data-i18n='Activity 1'><span id='btnActivity1_icon' class=''></span>Activity 1<span id=btnActivity1_badge class=\"badge badge-info\" style=\"margin-left:1ch;\"></span></button>",
+
+    "<button id='btnActivity2' data-role='none' class='btn btn-secondary btn-md ' style='font-family:inherit;' data-i18n='Activity 2'><span id='btnActivity2_icon' class=''></span>Activity 2<span id=btnActivity2_badge class=\"badge badge-info\" style=\"margin-left:1ch;\"></span></button>",
+
+    "<button id='btnActivity3' data-role='none' class='btn btn-secondary btn-md ' style='font-family:inherit;' data-i18n='Activity 3'><span id='btnActivity3_icon' class=''></span>Activity 3<span id=btnActivity3_badge class=\"badge badge-info\" style=\"margin-left:1ch;\"></span></button>",
+
+    "<button id='btnActivity4' data-role='none' class='btn btn-secondary btn-md ' style='font-family:inherit;' data-i18n='Activity 4'><span id='btnActivity4_icon' class=''></span>Activity 4<span id=btnActivity4_badge class=\"badge badge-info\" style=\"margin-left:1ch;\"></span></button>",
+  ].join('');
+</script>
+</div>
+<a name='/GoogleRestaurants' data-role=none></a>
+<div id="GoogleRestaurants"  class="nsb-form " style="display:none;  position:absolute;  height: 100vh; top:0px; left:0px; width:100%; ">
+<script>
+GoogleRestaurants.innerHTML=["",
+    "<button id='btnSeeRestaurants' data-role='none' class='btn btn-secondary btn-md ' style='font-family:inherit;' data-i18n='See Restaurants by Harper'><span id='btnSeeRestaurants_icon' class=''></span>See Restaurants by Harper<span id=btnSeeRestaurants_badge class=\"badge badge-info\" style=\"margin-left:1ch;\"></span></button>",
+  "<div id=txtaCloseRest data-role='none' class='' style='font-family:inherit;'>",
+  "<div style='height:100%' class='form-group row'><label id=txtaCloseRest_header class='bs4-control-label col-sm-4 col-form-label' for=txtaCloseRest_contents data-i18n='Closest 5 restaurants'>Closest 5 restaurants</label>",
+    "<div style='height:100%' class='col-sm-8'>",
+      "<div class='input-group' style='width:100%;height:100%;'>",
+        "<span id=txtaCloseRest_badge class='badge badge-info' style=margin-bottom:4px;></span>",
+    "<textarea id='txtaCloseRest_contents' class='form-control' name='' style='font-family:inherit;overflow-scrolling:touch; height:100%; ' autocapitalize=on autocorrect=on autocomplete=on spellcheck=true readonly  data-i18n=''></textarea>",
+      "</div>",
+      "</div>",
+  "</div></div>",
+  ].join('');
+</script>
+</div>
+<a name='/BlankTemplateAPICode' data-role=none></a>
+<div id="BlankTemplateAPICode"  class="nsb-form " style="display:none;  position:absolute;  height: 100vh; top:0px; left:0px; width:100%; ">
+<script>
+BlankTemplateAPICode.innerHTML=["",
+  ].join('');
+</script>
+</div>
+<a name='/Activity1' data-role=none></a>
+<div id="Activity1"  class="nsb-form " style="display:none;  position:absolute;  height: 100vh; top:0px; left:0px; width:100%; ">
+<script>
+Activity1.innerHTML=["",
+  ].join('');
+</script>
+</div>
+<a name='/Activity2' data-role=none></a>
+<div id="Activity2"  class="nsb-form " style="display:none;  position:absolute;  height: 100vh; top:0px; left:0px; width:100%; ">
+<script>
+Activity2.innerHTML=["",
+  ].join('');
+</script>
+</div>
+<a name='/Activity3' data-role=none></a>
+<div id="Activity3"  class="nsb-form " style="display:none;  position:absolute;  height: 100vh; top:0px; left:0px; width:100%; ">
+<script>
+Activity3.innerHTML=["",
+  ].join('');
+</script>
+</div>
+</div>
+<script>
+if(!navigator.cookieEnabled) NSB.MsgBox('Please turn cookies on.');
+(function(){var all=document.getElementsByTagName('*');for(var i=0;i<all.length;i++)if(all[i].id!=''&&typeof all[i].id!='undefined'&&typeof window[all[i].id]=='undefined')window[all[i].id]=all[i];})()
+var NSB = NSB || {};
+NSB.currentForm = Overview;
+NSB.stopOnError = true;
+NSB.enableBrowserArrows = false;
+NSB.enableAppScroll = false;
+NSB.id = 'Project1';
+NSB.initLanguage();
+NSB.voltAppId = '';
+NSB.voltDashboardAccess = False;
+NSB.voltDomain = '';
+NSB.PWA = true;
+if ($.mobile != undefined) $.mobile.hashListeningEnabled = false;
+
+// ***** Code for form: Overview *****
+window.addEventListener('load', function() {
+  Overview.style.display = 'block';
+  NSB.addProperties(Overview);
+  NSB.bs.addProperties(btnGoogleRest, 'Button_bs4');
+  NSB.bs.addProperties(btnBlankAPI, 'Button_bs4');
+  NSB.bs.addProperties(btnActivity1, 'Button_bs4');
+  NSB.bs.addProperties(btnActivity2, 'Button_bs4');
+  NSB.bs.addProperties(btnActivity3, 'Button_bs4');
+  NSB.bs.addProperties(btnActivity4, 'Button_bs4');
+  Overview.style.display = 'none';
+}, false);
+
+// ***** Code for form: GoogleRestaurants *****
+window.addEventListener('load', function() {
+  GoogleRestaurants.style.display = 'block';
+  NSB.addProperties(GoogleRestaurants);
+  NSB.bs.addProperties(btnSeeRestaurants, 'Button_bs4');
+  txtaCloseRest.ontouchmove=function(e){e.stopPropagation()};
+  txtaCloseRest_contents.style.height = 'calc(100% - ' + getComputedStyle(txtaCloseRest_header).height + ')';
+  NSB.bs.addProperties(txtaCloseRest, 'Textarea_bs4');
+  GoogleRestaurants.style.display = 'none';
+}, false);
+
+// ***** Code for form: BlankTemplateAPICode *****
+window.addEventListener('load', function() {
+  BlankTemplateAPICode.style.display = 'block';
+  NSB.addProperties(BlankTemplateAPICode);
+
+  BlankTemplateAPICode.style.display = 'none';
+}, false);
+
+// ***** Code for form: Activity1 *****
+window.addEventListener('load', function() {
+  Activity1.style.display = 'block';
+  NSB.addProperties(Activity1);
+
+  Activity1.style.display = 'none';
+}, false);
+
+// ***** Code for form: Activity2 *****
+window.addEventListener('load', function() {
+  Activity2.style.display = 'block';
+  NSB.addProperties(Activity2);
+
+  Activity2.style.display = 'none';
+}, false);
+
+// ***** Code for form: Activity3 *****
+window.addEventListener('load', function() {
+  Activity3.style.display = 'block';
+  NSB.addProperties(Activity3);
+
+  Activity3.style.display = 'none';
+}, false);
+
+
+window.addEventListener('orientationchange', function(){window.scrollTo(0,0)});
+window.addEventListener('load', function() {
+  if (typeof($().i18n) === 'function') $('[data-i18n]').i18n();
+  browserWarningMessage('Please use Google Chrome, Apple Safari or another supported browser.');
+  Overview.style.display = 'block';
+  Main();
+  if (typeof(Overview.onshow)=='function') Overview.onshow();
+}, false);
+</script>
+<script src="code.js"></script>
+
+</body>
+</html>
